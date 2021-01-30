@@ -1,0 +1,284 @@
+/* Main Elements */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(229, 225, 225, 0.2);
+  margin: 1rem;
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  border-top: 1px solid darkgrey;
+  padding-top: 5px;
+  padding-bottom: 50px;
+}
+
+/* Type Selectors */
+
+p {
+  font-family: "Crimson Text", serif;
+  color: #9c9a9a;
+  font-size: 1.2rem;
+}
+
+h1 {
+  font-family: "Rokkitt", serif;
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-family: "Rokkitt", serif;
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-family: "Rokkitt", serif;
+  font-size: 1.5rem;
+  color: #8c8a8a;
+}
+
+h4 {
+  font-family: "Rokkitt", serif;
+  font-size: 1.3rem;
+}
+
+span {
+  font-weight: bold;
+  color: rgb(62, 62, 62);
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+}
+
+nav {
+  /* text-decoration: none; */
+  color: black;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+nav li {
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 5%;
+  margin: 200px 0 20px 0;
+  font-family: "Lora", serif;
+}
+
+nav ul {
+  display: block;
+  max-width: 600px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav li {
+  list-style: none;
+  padding: 1rem;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Class Selectors */
+
+.intro-wrapper {
+  width: 100%;
+  /* max-width: 600px; */
+  padding: 20px;
+  /* border: 2px solid black; */
+  margin: auto;
+  overflow: auto;
+  padding: 10%;
+  /* margin: 1rem auto; */
+}
+
+.main-wrapper {
+  width: 100%;
+  /* max-width: 1000px; */
+  /* border: 2px solid black; */
+  margin-top: 10px;
+  margin: auto;
+}
+
+.contact {
+  background-color: rgba(62, 62, 62, 0.1);
+}
+
+.profile-image {
+  width: 80%;
+  margin: auto;
+  max-width: 600px;
+  display: block;
+}
+
+.main-image {
+  margin: auto;
+  padding: 10px;
+  max-width: 600px;
+  width: 300px;
+  display: block;
+}
+
+.text-content {
+  padding: 5px;
+}
+
+.header-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+/* Id Selectors */
+#contact {
+  color: rgb(134, 132, 132);
+}
+
+#left {
+  float: left;
+}
+
+#right,
+#tablet-right {
+  float: right;
+}
+
+#tablet-right {
+  display: none;
+}
+
+/* Pseudo-styles */
+nav a:hover {
+  color: lightblue;
+}
+
+#right a:hover,
+#tablet-right a:hover {
+  color: lightblue;
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+  nav li {
+    display: inline-block;
+  }
+
+  .intro-wrapper {
+    width: 100%;
+    display: inline-block;
+    padding-top: 0;
+  }
+
+  #intro-text {
+    margin: 0;
+    padding: 0;
+  }
+
+  .profile-image {
+    float: right;
+    width: 50%;
+  }
+
+  .portfolio-item {
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+  }
+
+  .text-content {
+    /* width: 80%; */
+    display: inline-block;
+  }
+
+  #right {
+    display: none;
+  }
+
+  #tablet-right {
+    display: inline-block;
+  }
+
+  #tablet-right a {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main-wrapper {
+    max-width: 100%;
+    text-align: center;
+  }
+  .portfolio-item {
+    display: inline-block;
+    max-width: 30%;
+    margin: auto;
+  }
+
+  .intro-wrapper {
+    padding-top: 20px;
+    margin: 0;
+    max-width: 90%;
+  }
+
+  .main-image {
+    max-width: 150%;
+  }
+
+  .profile-image {
+    float: right;
+    max-width: 100%;
+  }
+
+  header {
+    max-width: 1024px;
+    /* display: inline-block; */
+  }
+
+  footer {
+    max-width: 90%;
+    width: 100%;
+  }
+
+  h1 {
+    float: left;
+  }
+
+  nav ul {
+    float: right;
+  }
+
+  #tablet-right a {
+    display: inline-block;
+    padding: 10px;
+  }
+
+  #contact {
+    padding-top: 10px;
+  }
+}
