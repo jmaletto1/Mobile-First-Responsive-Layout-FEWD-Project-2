@@ -55,6 +55,7 @@ h3 {
 h4 {
   font-family: "Rokkitt", serif;
   font-size: 1.3rem;
+  padding-top: 10px;
 }
 
 span {
@@ -114,7 +115,7 @@ nav li {
   /* border: 2px solid black; */
   margin: auto;
   overflow: auto;
-  padding: 10%;
+  /* padding: 10%; */
   /* margin: 1rem auto; */
 }
 
@@ -140,8 +141,8 @@ nav li {
 .main-image {
   margin: auto;
   padding: 10px;
-  max-width: 600px;
-  width: 300px;
+  max-width: 100%;
+  /* width: 300px; */
   display: block;
 }
 
@@ -197,11 +198,13 @@ nav a:hover {
   #intro-text {
     margin: 0;
     padding: 0;
+    text-align: left;
   }
 
   .profile-image {
     float: right;
-    width: 50%;
+    width: 40%;
+    margin-left: 5%;
   }
 
   .portfolio-item {
@@ -243,16 +246,13 @@ nav a:hover {
   .intro-wrapper {
     padding-top: 20px;
     margin: 0;
-    max-width: 90%;
-  }
-
-  .main-image {
-    max-width: 150%;
+    padding-bottom: 50px;
   }
 
   .profile-image {
     float: right;
     max-width: 100%;
+    /* margin-left: 5%; */
   }
 
   header {
@@ -280,5 +280,9 @@ nav a:hover {
 
   #contact {
     padding-top: 10px;
+  }
+
+  #intro-text {
+    width: 90%;
   }
 }
