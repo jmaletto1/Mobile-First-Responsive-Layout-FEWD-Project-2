@@ -85,6 +85,7 @@ nav li {
   border-radius: 5%;
   margin: 200px 0 20px 0;
   font-family: "Lora", serif;
+  max-width: 300px;
 }
 
 nav ul {
@@ -244,6 +245,7 @@ nav a:hover {
   }
 
   .intro-wrapper {
+    max-width: 92%;
     padding-top: 20px;
     margin: 0;
     padding-bottom: 50px;
@@ -256,12 +258,12 @@ nav a:hover {
   }
 
   header {
-    max-width: 1024px;
+    max-width: 92%;
     /* display: inline-block; */
   }
 
   footer {
-    max-width: 90%;
+    max-width: 92%;
     width: 100%;
   }
 
