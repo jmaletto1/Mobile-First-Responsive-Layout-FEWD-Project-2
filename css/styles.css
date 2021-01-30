@@ -258,14 +258,6 @@ nav a:hover {
     font-size: 0.95rem;
     padding: 10px;
   }
-
-  /* th:nth-child(3) {
-    display: inline-block;
-  }
-
-  tr:nth-child(2) {
-    display: inline-block;
-  } */
 }
 
 @media screen and (min-width: 1024px) {
